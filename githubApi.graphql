@@ -1,0 +1,13 @@
+{
+  book: organization(login: "the-road-to-learn-react") {
+    ...sharedOrganizationFields
+  }
+  organization(login: "facebook") {
+    ...sharedOrganizationFields
+  }
+}
+
+fragment sharedOrganizationFields on Organization {
+  name
+  url
+}
